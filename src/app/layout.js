@@ -19,8 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${uncutSans.className}`}>
         <TheHeader />
-        <main className="px-4">{children}</main>
-
+        {children}
         <TheFooter />
       </body>
     </html>
