@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Kevin Wolford",
+  title: "Kevin Wolford | Visual Artist",
   description: "Art",
 };
 

@@ -10,7 +10,6 @@ const uncutSans = localFont({
 });
 
 export const metadata = {
-  title: "Kevin Wolford",
   description: "Art",
 };
 

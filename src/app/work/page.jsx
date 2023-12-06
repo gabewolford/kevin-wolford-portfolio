@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Kevin Wolford | Work",
+  description: "Art",
+};
+
 export default function WorkPage() {
   return (
     <>
