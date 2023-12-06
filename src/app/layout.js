@@ -17,9 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${uncutSans.className}`}>
+      <body className={`${uncutSans.className} pb-[40px] border`}>
         <TheHeader />
-        {children}
+        <main>{children}</main>
         <TheFooter />
       </body>
     </html>

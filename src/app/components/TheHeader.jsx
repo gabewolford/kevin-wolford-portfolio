@@ -32,14 +32,17 @@ export default function TheHeader() {
   const hiddenClass = isStudioRoute ? "hidden" : "";
 
   return (
-    <header className={`p-4 ${hiddenClass}`}>
+    <header className={`${hiddenClass} border-b`}>
       <nav className="flex flex-row justify-between items-center">
-        <Link href="/">
+        <Link
+          className="border-r p-4 hover:bg-white hover:text-[#242738] transition-all duration-300"
+          href="/"
+        >
           <h1 className="text-2xl">Kevin Wolford</h1>
         </Link>
 
         {!isMobileMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden flex h-full border-l p-5">
             <button onClick={toggleMobileMenu}>
               <Image src={menuIcon} alt="Menu" />
             </button>
@@ -61,12 +64,26 @@ export default function TheHeader() {
               <Link href="/" onClick={toggleMobileMenu} className="text-xl">
                 Home
               </Link>
+              <Link href="/work" onClick={toggleMobileMenu} className="text-xl">
+                Work
+              </Link>
             </div>
           </div>
         )}
 
-        <div className="hidden md:block flex-row space-x-10">
-          <Link href="/">Home</Link>
+        <div className="hidden md:flex md:flex-row">
+          <Link
+            className="border-l p-5 hover:bg-white hover:text-[#242738] transition-all duration-300"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="border-l p-5 hover:bg-white hover:text-[#242738] transition-all duration-300"
+            href="/work"
+          >
+            Work
+          </Link>
         </div>
       </nav>
     </header>

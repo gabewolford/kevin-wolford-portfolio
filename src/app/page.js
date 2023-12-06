@@ -1,7 +1,14 @@
-export default function Home() {
+export const metadata = {
+  title: "Kevin Wolford",
+  description: "Art",
+};
+
+export default function HomePage() {
   return (
-    <main className="px-4">
-      <h1>Home Page</h1>
-    </main>
+    <>
+      <h1 className="text-lg border-b p-4 text-right">
+        Kevin Wolford is a visual artist based in Western Pennsylvania.
+      </h1>
+    </>
   );
 }
