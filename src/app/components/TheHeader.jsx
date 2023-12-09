@@ -35,7 +35,7 @@ export default function TheHeader() {
     <header className={`${hiddenClass} border-b`}>
       <nav className="flex flex-row justify-between items-center">
         <Link
-          className="border-r p-4 hover:bg-white hover:text-[#242738] transition-all duration-300"
+          className="border-r p-[18px] hover:bg-white hover:text-[#242738] transition-all duration-300"
           href="/"
         >
           <h1 className="text-2xl">Kevin Wolford</h1>
@@ -59,7 +59,7 @@ export default function TheHeader() {
         )}
 
         {isMobileMenuOpen && (
-          <div className="animate__animated animate__slideInRight md:hidden fixed inset-0 bg-[#000000] bg-opacity-90 z-40">
+          <div className="animate__animated animate__slideInRight md:hidden fixed inset-0 bg-[#000000] bg-opacity-90 z-40 font-mono uppercase">
             <div className="flex flex-col h-full justify-center space-y-12 items-center">
               <Link href="/" onClick={toggleMobileMenu} className="text-xl">
                 Home
@@ -71,15 +71,15 @@ export default function TheHeader() {
           </div>
         )}
 
-        <div className="hidden md:flex md:flex-row">
+        <div className="uppercase text-sm hidden md:flex md:flex-row font-mono">
           <Link
-            className="border-l p-5 hover:bg-white hover:text-[#242738] transition-all duration-300"
+            className="border-l p-6 hover:bg-white hover:text-[#242738] transition-all duration-300"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="border-l p-5 hover:bg-white hover:text-[#242738] transition-all duration-300"
+            className="border-l p-6 hover:bg-white hover:text-[#242738] transition-all duration-300"
             href="/work"
           >
             Work

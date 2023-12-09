@@ -1,12 +1,12 @@
 export const metadata = {
   title: "Kevin Wolford | Visual Artist",
-  description: "Art",
+  description: "Kevin Wolford - visual artist based in Western Pennsylvania.",
 };
 
 export default function HomePage() {
   return (
     <>
-      <h1 className="text-lg border-b p-4 text-right">
+      <h1 className="border-b px-4 py-1.5 text-right">
         Kevin Wolford is a visual artist based in Western Pennsylvania.
       </h1>
     </>

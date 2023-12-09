@@ -6,7 +6,7 @@ export const metadata = {
 export default function WorkPage() {
   return (
     <>
-      <h1 className="text-lg border-b p-4 text-right">Work Page</h1>
+      <h1 className="border-b px-4 py-1.5 text-right">Work Page</h1>
     </>
   );
 }
