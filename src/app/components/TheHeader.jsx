@@ -42,7 +42,7 @@ export default function TheHeader() {
         </Link>
 
         {!isMobileMenuOpen && (
-          <div className="md:hidden flex h-full border-l p-5">
+          <div className="md:hidden flex h-full border-l p-[22px]">
             <button onClick={toggleMobileMenu}>
               <Image src={menuIcon} alt="Menu" />
             </button>
@@ -52,7 +52,7 @@ export default function TheHeader() {
         {isMobileMenuOpen && (
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden absolute top-4 right-4 z-50 animate__animated animate__rotateIn animate__faster"
+            className="md:hidden absolute top-5 right-5 z-50 animate__animated animate__rotateIn animate__faster"
           >
             <Image src={closeIcon} alt="Close" />
           </button>
