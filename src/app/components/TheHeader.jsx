@@ -59,7 +59,7 @@ export default function TheHeader() {
         )}
 
         {isMobileMenuOpen && (
-          <div className="animate__animated animate__slideInRight md:hidden fixed inset-0 bg-[#000000] bg-opacity-90 z-40 font-mono uppercase">
+          <div className="animate__animated animate__slideInRight md:hidden fixed inset-0 bg-[#151620] bg-opacity-95 z-40 font-mono uppercase">
             <div className="flex flex-col h-full justify-center space-y-12 items-center">
               <Link href="/" onClick={toggleMobileMenu} className="text-xl">
                 Home
